@@ -24,14 +24,24 @@ CHECK LIST
 
 ***Server Side**
 
-[ ] create calculations array
+[ x] create calculations array
     *will contain all calculations that will be sent to client server side to be appended on DOM*
 [ ] post route
     [ ] need route
     [ ] needs to do the math
     [ ] needs push method to push into calculations array. (calculations.push(newData))
+[ x] app get route
 [ ] a function that can do the math
     [ ] numOne
     [ ] numTwo
     [ ] operator
     [ ] result
+
+
+    QUESTIONS
+
+    -How to write a function to do the math?
+    -How do I get the operator buttons to function on the client side? 
+        -Confused about it working on the server side
+    -If I enter the inputs on the client side, should the result render on the DOM? 
+    And should it disappear right away?
