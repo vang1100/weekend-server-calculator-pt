@@ -10,18 +10,28 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 
 CHECK LIST
 
-*** Client Side 
-[ ] add functions to +, -, #, C = buttons and console log event
-[ ] create object from user inputs
-[ ] create axios.post request with created object
-[ ] append previous calculations
-[ ] append recent calculations
+***Client Side**
 
-*** Server Side
+[ ] axios get
+    [ ] grab calculations from server
+    [ ] append calculations onto DOM (query selector, innerHTML)
+[ ] append most recent calculation onto DOM
+[ ] create object from user inputs
+[ ] create axios.post 
+    [ ] should include objects that look like {numOne: numOne, numTwo: numTwo, operator: operator}
+[ ] create function (?) for button C to clear inputs
+[ ] functions for operators?
+
+***Server Side**
 
 [ ] create calculations array
+    *will contain all calculations that will be sent to client server side to be appended on DOM*
 [ ] post route
     [ ] need route
     [ ] needs to do the math
-    [ ]
-[ ]
+    [ ] needs push method to push into calculations array. (calculations.push(newData))
+[ ] a function that can do the math
+    [ ] numOne
+    [ ] numTwo
+    [ ] operator
+    [ ] result

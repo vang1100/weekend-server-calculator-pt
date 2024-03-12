@@ -7,17 +7,22 @@ app.use(express.static('server/public'));
 
 // Global variable that will contain all of the
 // calculation objects:
-let calculations = []
+let calculations = {
+  numOne: 1,
+  numTwo: 2,
+  operator: 'plus',
+  result: 3
+};
 
 
 // Here's a wonderful place to make some routes:
 
 // GET /calculations
 
-// app.get('/calculations', (req, res) => {
-//   console.log('GET calculations');
-//   res.send(calculations);
-// } )
+ app.get('/calculations', (req, res) => {
+  console.log('GET calculations: retreiving all the calculations from server and placing it into a route.');
+   res.send(calculations);
+ } )
 
 // POST /calculations
 // app.post
