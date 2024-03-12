@@ -14,7 +14,9 @@ function getCalculations(){
 
         for (let calculations of calculationsFromServer){
             calcHistoryDIV.innerHTML += `
-            <p>${calculations.numOne} ${calculations.operator} ${calculations.numTwo} ${'='} ${calculations.result}</p>
+            <ul>
+            <li>${calculations.numOne} ${calculations.operator} ${calculations.numTwo} ${'='} ${calculations.result}</li>
+            </ul>
             `;
         }
     }).catch((error) =>{
@@ -27,23 +29,10 @@ getCalculations();
 //need to create a function that would submit all inputs and then
 //send it to the server side
 
-// function add(){
-//  }
+//creating function for form
 
-// function minus() {
-// }
 
-// function multiply(){
-// }
-
-// function divide(){
-
-// }
-
-// function equal(){
-
-// }
-
-// function clearAll(){
-
-// }
+function submit(event){
+    event.preventDefault();
+    console.log('submit');
+}
