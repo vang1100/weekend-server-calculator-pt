@@ -14,13 +14,13 @@ let calculations = []
 
 // GET /calculations
 
-app.get('/calculations', (req, res) => {
-  console.log('GET calculations');
-  res.send(calculations);
-} )
+// app.get('/calculations', (req, res) => {
+//   console.log('GET calculations');
+//   res.send(calculations);
+// } )
 
 // POST /calculations
-app.post
+// app.post
 
 
 
