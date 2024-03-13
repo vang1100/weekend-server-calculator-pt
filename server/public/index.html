@@ -8,15 +8,14 @@
   </head>
   <body>
     <h1>Server-Side Calculator</h1>
-
     <form id="calc" data-testid="calculator" onSubmit="submit(event)">
       <input id ="numOne" placeholder="First Number">
       <button id="addOp">+</button>
-      <button id="minusOp">-</button>
+      <button onClick ="clickMinus(event)" id="minusOp">-</button>
       <button id="multiplyOp">*</button>
       <button id="divideOp">/</button>
-      <input id="numTwo" placeholder="Second Number">
-      <button id="equal">=</button>
+      <input  id="numTwo" placeholder="Second Number">
+      <button onClick="clickEqual(event)" id="equal">=</button>
       <button id="clearAll">C</button>
     </form>
 

@@ -21,6 +21,15 @@ let calculations = [
    }
 ];
 
+//function to make calculations
+
+ function math() {
+   if (req.body.operator === '-'){
+    result = req.body.numOne - req.body.numTwo;
+   }
+ }
+
+ math();
 
 // Here's a wonderful place to make some routes:
 
@@ -32,7 +41,14 @@ let calculations = [
  } )
 
 // POST /calculations
-// app.post
+app.post('/calculations', (req, rest) =>{
+  console.log('post made for calculations');
+  console.log(req.body);
+
+  // calculations.push()
+
+  res.sendStatus(201);
+});
 
 
 
